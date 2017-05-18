@@ -1,2 +1,8 @@
-%h1 Toppages#index
-%p Find me in app/views/toppages/index.html.erb
+- content_for :cover do
+  .cover
+    .cover-inner
+      .cover-contents
+        %h1<> ステキなモノと出会う場所
+        = link_to 'モノリストを始める', "#", class: "btn btn-success btn-lg"
+
+%p テスト
