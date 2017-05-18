@@ -31,31 +31,31 @@ footer {
   background-color: $white;
 }
 .cover {
- margin-top: -20px;
- margin-bottom: 20px;
- width: 100%;
- height: 300px;
- background: $url_0 center center no-repeat;
- background-size: cover;
- .cover-inner {
-   height: 100%;
-   margin: auto;
-   display: table;
-   .cover-contents {
-     display: table-cell;
-     vertical-align: middle;
-     text-align: center;
-     position: relative;
-     h1 {
-       margin: 0 0 20px 0;
-       color: $white;
-       font-weight: bold;
-       letter-spacing: 0.15em;
-     }
+  margin-top: -20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 300px;
+  background: $url_0 center center no-repeat;
+  background-size: cover;
+  .cover-inner {
+    height: 100%;
+    margin: auto;
+    display: table;
+    .cover-contents {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+      h1 {
+        margin: 0 0 20px 0;
+        color: $white;
+        font-weight: bold;
+        letter-spacing: 0.15em;
+      }
     }
   }
 }
 .navbar-header img {
- margin-top: 5px;
- height: 40px;
+  margin-top: 5px;
+  height: 40px;
 }
