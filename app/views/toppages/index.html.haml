@@ -3,6 +3,7 @@
     .cover-inner
       .cover-contents
         %h1<> ステキなモノと出会う場所
-        = link_to 'モノリストを始める', "#", class: "btn btn-success btn-lg"
+        - unless logged_in?
+          = link_to 'モノリストを始める', signup_path, class: "btn btn-success btn-lg"
 
 %p テスト
