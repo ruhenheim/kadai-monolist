@@ -2,10 +2,8 @@
 .search {
   margin-bottom: 20px;
 }
+// item
 .item {
-  .panel-body {
-    height: 70px;
-  }
   .panel-heading {
     height: 250px;
     img {
@@ -13,11 +11,18 @@
       max-width: 100%;
     }
   }
-}
-p.item-title {
-  // 文の行数を2行に保ち、最後に... を追加するスタイル
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
+  .panel-body {
+    height: 120px;
+  }
+  p.item-title {
+    // 文の行数を2行に保ち、最後に... を追加するスタイル
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .buttons form {
+    display: inline-block;
+    margin: 0 5px;
+  }
 }

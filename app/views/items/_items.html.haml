@@ -7,4 +7,11 @@
             .panel-heading.text-center
               %img{src: "#{item.image_url}", alt: ""}
             .panel-body
-              %p.item-title= item.name
+              %p.item-title<>
+                - if item.persisted?
+                  = link_to item.name, item
+                - else
+                  = item.name
+              .buttons.text-center
+                - if logged_in?
+                  = render 'ownerships/want_button', item: item

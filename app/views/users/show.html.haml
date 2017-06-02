@@ -3,3 +3,14 @@
     %img{src: "#{gravatar_url(@user, size: 100)}", alt: "", class: "img-circle"}
   .name.text-center
     %h1= @user.name
+  .status.text-center
+    %ul
+      %li
+        .status-label WANT
+        .status-value#want_count<>
+          = @count_want
+      %li
+        .status-label HAVE
+        .status-value#have_count<>
+          xxx
+= render 'items/items', items: @items
